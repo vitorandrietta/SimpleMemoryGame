@@ -81,7 +81,7 @@ view model =
     div [ class "container" ]
         [ button [ type_ "button", class "btn btn-primary restart", onClick RestartGame ]
             [ text "Reiniciar Jogo" ]
-        , div [ class "jumbotron" ]
+        , div []
             (if gameOver model.board then
                 [ text "fim de Jogo" ]
              else
